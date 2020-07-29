@@ -40,7 +40,7 @@ app.put("/repositories/:id", (request, response) => {
   }
   
   repositories[repoIndex] = repoFindUpdate;
-  return response.send();
+  return response.json(repoFindUpdate)
 });
 
 app.delete("/repositories/:id", (request, response) => {
